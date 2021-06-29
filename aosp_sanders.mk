@@ -15,11 +15,11 @@
 # Inherit from sanders device
 $(call inherit-product, device/motorola/sanders/device.mk)
 
-# Inherit some common Pixel Experience stuff.
+# Inherit some common AOSPK stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+CUSTOM_MAINTAINER := Jorge
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := motorola
